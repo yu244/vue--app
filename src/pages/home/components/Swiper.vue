@@ -39,8 +39,8 @@ export default {
  overflow: hidden
  width: 100%
  height: 0
- padding-bottom: 31.25%
- background-color: #eee
+ padding-bottom: 30.46%
+ background-color: #fff
  .problem_part
   touch-action: none
   .swiper-img
