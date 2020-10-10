@@ -2,7 +2,7 @@
   <div>
     <div class="title">热销推荐</div>
     <ul>
-      <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+      <li class="item border-bottom" v-for="item of list" :key="item.id">
         <div class="item-img-wrapper">
           <img class="item-img" :src="item.imgUrl">
         </div>
@@ -19,25 +19,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1905/44/44c6db1f35f281f6a3.water.jpg_200x200_c654b8a4.jpg',
-        title: '横店影视城',
-        desc: '扬名中外的“东方好莱坞”'
-      }, {
-        id: '0002',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1603/50/5020c11e7dde947390.water.jpg_200x200_a7b59471.jpg',
-        title: '清水湾沁温泉',
-        desc: '清水湾沁温泉，以温泉为特色，以量大质优而著称'
-      }, {
-        id: '0003',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1901/4b/4b36f3ba52bbddcba3.water.jpg_200x200_c2209195.jpg',
-        title: '诸葛八卦村',
-        desc: 'AAAA级国家旅游景区,是迄今发现的诸葛亮后裔的最大聚居地'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>
